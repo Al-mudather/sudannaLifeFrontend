@@ -18,16 +18,29 @@
 </template>
 
 <script>
-import { mapActions } from 'vuex'
-import { LocalStorage } from 'quasar'
+import { mapActions, mapState } from 'vuex'
 
 export default {
   name: 'MainLayout',
   data () {
     return {
       leftDrawerOpen: false,
-      visible: !!LocalStorage.getItem('token')
+      visible: false
     }
+  },
+
+  watch: {
+    token (val) {
+      if (val) {
+        this.visible = true
+      } else {
+        this.visible = false
+      }
+    }
+  },
+
+  computed: {
+    ...mapState('authentication', ['token'])
   },
 
   methods: {
