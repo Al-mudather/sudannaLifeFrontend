@@ -25,7 +25,7 @@ const routes = [
     path: '/',
     component: () => import('layouts/MainLayout.vue'),
     children: [
-      { path: '', name: 'main', component: () => import('pages/index.vue') },
+      { path: '', name: 'main', component: () => import('pages/Index.vue') },
       { path: 'userManagement', name: 'user-management', beforeEnter: requireAuthentication, component: () => import('pages/UserManagement.vue') },
       { path: 'emailLogin', name: 'email-login', component: () => import('pages/forms/EmailLoginForm.vue') },
       { path: 'phoneLogin', name: 'phone-login', component: () => import('pages/forms/PhoneLoginForm.vue') },
