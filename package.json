@@ -36,7 +36,7 @@
     "moment": "^2.29.1",
     "node-fetch": "^2.6.1",
     "plyr": "^3.6.2",
-    "quasar": "^1.0.0",
+    "quasar": "^1.14.3",
     "vue-apollo": "^3.0.4",
     "vue-breakpoint-component": "^1.2.6",
     "vue-breakpoints": "^1.1.0",
@@ -46,7 +46,8 @@
     "vue-i18n": "^8.0.0",
     "vue-paginate": "^3.6.0",
     "vue-plyr": "^6.0.4",
-    "vue2-leaflet": "^2.6.0"
+    "vue2-leaflet": "^2.6.0",
+    "vuetify": "^2.3.18"
   },
   "devDependencies": {
     "@quasar/app": "^1.0.0",
