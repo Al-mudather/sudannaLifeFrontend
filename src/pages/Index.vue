@@ -12,8 +12,7 @@
           <q-separator />
 
           <q-card-actions vertical>
-            <q-btn color="orange" outline label="Phone Login"  @click="phoneLogin" />
-            <q-btn color="primary" outline label="Email Login"  @click="emailLogin" />
+            <q-btn color="primary" outline label="Login"  @click="login" />
             <q-btn color="info" outline label="Register"  @click="registerNewAccount" />
           </q-card-actions>
         </q-card>
@@ -26,12 +25,8 @@
 export default {
   name: 'PageIndex',
   methods: {
-    phoneLogin () {
-      this.$router.push({ name: 'phone-login' })
-    },
-
-    emailLogin () {
-      this.$router.push({ name: 'email-login' })
+    login () {
+      this.$router.push({ name: 'login' })
     },
 
     registerNewAccount () {

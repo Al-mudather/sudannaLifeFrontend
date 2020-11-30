@@ -26,7 +26,7 @@
                 v-on:TextEditorValue="EnglishDescriptionValueHandler"
               />
 
-              <q-datetime-picker v-model="model" type="datetime" />
+              <!-- <q-datetime-picker v-model="model" type="datetime" /> -->
 
               <div class="row q-gutter-md justify-center">
                 <div class="q-mt-md col-5 col-md-5 col-sm-5 col-xs-11">
